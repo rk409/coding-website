@@ -1,0 +1,611 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+*::selection{
+    background-color: #FAED23;
+    color: #000;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* Header Navigation Part */
+
+header p{
+    background-color: #FAED23;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+    font-weight: 500;
+}
+header nav .header_sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px 0 15px;
+    background-color: #ffffff;
+    height: 60px;
+    box-shadow: 0 8px 8px rgba(231, 231, 231, 0.361);
+}
+header nav .header_sec:hover{
+    cursor: pointer;
+}
+header nav .header_sec #header_logo img{
+    width: 130px;
+}
+header nav .header_sec #header_nav ul{
+    list-style-type: none;
+}
+header nav .header_sec #header_nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 20.5px 16px;
+    transition: all .2s linear;
+}
+header nav .header_sec #header_nav ul li a:hover{
+    background-color: #FAED23;
+}
+header nav .header_sec #header_nav ul{
+    display: flex;
+}
+header nav .header_sec #header_search{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+header nav .header_sec #header_search input{
+    border: none;
+    border-radius: 50px;
+    height: 30px;
+    outline: none;
+    background-color: rgb(243, 241, 241);
+}
+header nav .header_sec #header_search input[type="text"]{
+    padding-left: 15px;
+}
+header nav .header_sec #header_search input::placeholder{
+    font-family: "Caveat", cursive;
+    font-size: 16px;
+}
+header nav .header_sec #header_search .search_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    height: 30px;
+    width: 35px;
+    background-color: #FAED23;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: all .1s linear;
+}
+header nav .header_sec #header_search .search_icon:hover{
+    background-color: #f0e001;
+}
+header nav .header_sec #header_search .search_icon i{
+    opacity: 0.7;
+    transition: all .1s linear;
+}
+header nav .header_sec #header_search .search_icon i:hover{
+    opacity: 1;
+}
+
+/* Main Section Part */
+
+main #hero_section{
+    width: 100%;
+    height: 501.5px;
+    padding: 20px 0;
+    position: relative;
+    background-image: url(/Elements/background_image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+main #hero_section #main_heading{
+    font-family: "Caveat", cursive;
+    font-size: 77px;
+    font-weight: 700;
+    position: absolute;
+    left: 6.2%;
+    top: 35px;
+}
+main #hero_section #main_heading .orange_highlight{
+    background-image: url(Elements/orange_high.png);
+    background-repeat: no-repeat;
+    font-size: 80px;
+    font-family: "Caveat", cursive;
+    background-position: center;
+    background-size: contain;
+}
+main #hero_section #sub_heading{
+    font-size: 70px;
+    font-family: "Caveat", cursive;
+    position: absolute;
+    font-weight: 600;
+    left: 6.4%;
+    top: 127px;
+}
+main #hero_section #sub_heading .blue_highlight{
+    background-image: url(Elements/Blue_high.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    font-size: 70px;
+    font-weight: 600;
+    font-family: "Caveat", cursive;
+}
+main #hero_section .arrow{
+    width: 54px;
+    position: absolute;
+    left: 25%;
+    top: 200px;
+}
+main #hero_section .tips_note{
+    font-family: "Caveat", cursive;
+    line-height: 13px;
+    position: absolute;
+    left: 27.5%;
+    top: 258px;
+    font-weight: bolder;
+    transform: rotate(-21deg);
+}
+main #hero_section .tips_note .highlight{
+    font-family: "Caveat", cursive;
+    color: #fa2323;
+}
+main #hero_section a{
+    text-decoration: none;
+    color: black;
+    border: none;
+    background-color: #FAED23;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 28px;
+    border-radius: 4px;
+    position: absolute;
+    left: 6.2%;
+    top: 260px;
+    transition: all .1s linear;
+}
+main #hero_section a:hover{
+    background-color: #f0e001;
+}
+main #hero_section a .btn_design{
+    font-family: "Caveat", cursive;
+    font-size: 22px;
+}
+main #hero_section .char_img{
+    height: 457px;
+    position: absolute;
+    top: 44px;
+    right: 0;
+}
+
+/* Series Section bar */
+
+section #first_sec{
+    width: 100%;
+    padding: 40px 0;
+    position: relative;
+    background: linear-gradient(#F4F4F4, #fff);
+}
+section #first_sec .web_series_head{
+    text-align: center;
+    font-size: 50px;
+    padding: 10px 0 10px;
+    font-weight: 600;
+}
+section #first_sec .web_series_head .f_deg{
+    font-family: "Satisfy", cursive;
+    font-weight: 700;
+    font-size: 70px;
+    color: #fa2323;
+}
+section #first_sec .web_dev_series_card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px 100px;
+}
+section #first_sec .web_dev_series_card a img{
+    width: 50px;
+}
+section #first_sec .web_dev_series_card a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #fff;
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 0 30px;
+    box-shadow: 2px 2px 10px rgba(211, 211, 211, 0.717);
+    transition: all .2s ease-in-out;
+}
+section #first_sec .web_dev_series_card a:hover{
+    transform: scale(1.1) rotate(-2deg);
+}
+section #first_sec .cur_arrow{
+    width: 70px;
+    position: absolute;
+    right: 20%;
+    top: 18%;
+    transform: rotate(100deg);
+}
+.scroll{
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes scroll {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/* Series Section 2 Bar */
+
+section #second_sec{
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+}
+section #second_sec .digital_market_head{
+    font-size: 50px;
+    text-align: center;
+    padding: 0 0 10px;
+    font-weight: 600;
+}
+section #second_sec .digital_market_head .d_deg{
+    font-family: "Satisfy", cursive;
+    font-weight: 700;
+    font-size: 70px;
+    color: #fa2323;
+}
+section #second_sec .digital_marketing_series_card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px 100px;
+}
+section #second_sec .digital_marketing_series_card a img{
+    width: 50px;
+}
+section #second_sec .digital_marketing_series_card a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #fff;
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 0 30px;
+    box-shadow: 2px 2px 10px rgba(211, 211, 211, 0.717);
+    transition: all .2s ease-in-out;
+}
+section #second_sec .digital_marketing_series_card a:hover{
+    transform: scale(1.1) rotate(-2deg);
+}
+section #second_sec .cur_arrow_till{
+    width: 50px;
+    position: absolute;
+    left: 31%;
+    top: 13%;
+}
+
+/* Series Section 3 Bar */
+
+section #third_sec{
+    width: 100%;
+    padding: 20px 0;
+    position: relative
+}
+section #third_sec .program_head{
+    text-align: center;
+    font-size: 50px;
+    padding: 0 0 10px;
+    font-weight: 600;
+}
+section #third_sec .program_head .m_deg{
+    font-family: "Satisfy", cursive;
+    font-weight: 700;
+    font-size: 70px;
+    color: #fa2323;
+}
+section #third_sec .program_series_card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px 100px;
+}
+section #third_sec .program_series_card a img{
+    width: 50px;
+}
+section #third_sec .program_series_card a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #fff;
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 0 30px;
+    box-shadow: 2px 2px 10px rgba(211, 211, 211, 0.717);
+    transition: all .2s ease-in-out;
+}
+section #third_sec .program_series_card a:hover{
+    transform: scale(1.1) rotate(-2deg);
+}
+section #third_sec .cur_arrow{
+    width: 70px;
+    position: absolute;
+    right: 13%;
+    top: 33%;
+    transform: rotate(100deg);
+}
+
+
+/* Series Section 4 Bar */
+
+section #four_sec{
+    width: 100%;
+    padding: 50px 100px;
+    background-color: #fff019;
+}
+section #four_sec .test_head{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+section #four_sec .rating{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+}
+section #four_sec .rating i{
+    color:#fff;
+    background-color: #1bcb21;
+    padding: 1px;
+    margin: 0 1px;
+}
+section #four_sec .rating .review{
+    font-weight: 700;
+    text-decoration: underline;
+}
+section #four_sec .feedback{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section #four_sec .feedback .first{
+    position: relative;
+}
+section #four_sec .feedback .second{
+    position: relative;
+}
+section #four_sec .feedback .feed{
+    height: 225px;
+    width: 500px;
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 25px;
+    align-content: center;
+    border-radius: 10px;
+}
+section #four_sec .feedback .feed .describe{
+    text-align: justify;
+    color: grey;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 20px;
+}
+section #four_sec .feedback .feed .name{
+    margin-top: 40px;
+    font-size: 17px;
+    font-style: italic;
+    color: gray;
+    text-align: right;
+}
+section #four_sec .feedback .feed .quotes1{
+    position: absolute;
+    width: 40px;
+    top: -5%;
+}
+section #four_sec .feedback .feed .quotes2{
+    position: absolute;
+    width: 40px;
+    top: -5%;
+}
+
+/* Series Section 5 Bar */
+
+section #five_sec{
+    padding: 30px 100px;
+    position: relative;
+}
+section #five_sec .faq{
+    font-size: 40px;
+    padding: 10px 0 10px;
+    font-weight: 700;
+    margin-bottom: 40px;
+} 
+section #five_sec .accordian{
+    background-color: #fff;
+    cursor: pointer;
+    padding: 20px 40px;
+    margin-top: 18px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(211, 211, 211, 0.717);
+}
+section #five_sec .accordian .que{
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section #five_sec .accordian .que h3{
+    font-weight: 600;
+}
+section #five_sec .accordian .que i{
+    font-weight: 700;
+    font-size: 22px;
+    transition: transform 0.2s;
+}
+section #five_sec .accordian .que i.active{
+    transform: rotate(180deg);
+}
+section #five_sec .accordian .answer{
+    color: #666;
+    line-height: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s;
+}
+
+/* Series Section 6 Bar */
+
+section #six_sec{
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+}
+section #six_sec .companies_head{
+    text-align: center;
+    font-size: 35px;
+    padding: 0 0 10px;
+    font-weight: 600;
+}
+section #six_sec .companies_icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+}
+section #six_sec .companies_icon a{
+    height: 100px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section #six_sec .companies_icon a img{
+    width: 140px;
+}
+/* Series Section 7 Bar */
+
+section #seven_sec{
+    background-color: #fff019;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+}
+section #seven_sec .form_content .subscribe_head{
+    font-size: 50px;
+    font-family: "Caveat", cursive;
+    line-height: 50px;
+    font-weight: 700;
+}
+section #seven_sec .form_content p{
+    margin-top: 30px;
+    line-height: 20px;
+}
+section #seven_sec .form_subscribe{
+    background-color: #fff;
+    padding: 40px 40px 25px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 2px 2px 10px #e6d713;
+    background-image: url(/Elements/Parallax_form.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+section #seven_sec .form_subscribe form input{
+    height: 40px;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    background-color: transparent;
+}
+section #seven_sec .form_subscribe form button{
+    margin-top: 40px;
+    height: 30px;
+    align-content: end;
+    width: 80px;
+    background-color: #FAED23;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+section #seven_sec .form_subscribe form button:hover{
+    background-color: #f0e001;
+}
+
+/* Footer Section Bar */
+
+footer #footer_sec{
+    background-color: #F4F4F4;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer #footer_sec p{
+    font-weight: 300;
+    font-size: 14px;
+}
+footer #footer_sec .footer_social_icon a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 6px;
+    color: black;
+    /* opacity: 0.5; */
+    transition: all .3s;
+}
+footer #footer_sec .footer_social_icon a:hover{
+   color: #f0e001;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple ARIA Example</title>
+</head>
+
+<body>
+    <p class="myPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quos facere labore beatae,
+        inventore commodi voluptas architecto atque voluptates facilis.</p>
+    <button class="btn">submit</button>
+    <ul>
+
+    </ul>
+    <button class="out">close</button>
+    <button id="rep">alert</button>
+    <img>
+    <script>
+        let dabao = document.querySelector('#rep');
+        dabao.addEventListener('click', function () {
+            alert("done")
+            alert("gone")
+            alert("one")
+            alert("go")
+        })
+        const image = document.querySelector('img');
+        image.setAttribute('src', 'cat.jpeg')
+        image.style.border = "2px,solid,black"
+        image.style.borderRadius = "10px"
+    </script>
+</body>
+
+</html>
